@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ListaAutomoveis [
+    <!ELEMENT ListaAutomoveis (Automovel+)>
+    <!ELEMENT Automovel (Descricao, Caracteristicas, Preco)>
+    <!ELEMENT Descricao (#PCDATA)>
+    <!ATTLIST Descricao Combustivel (GASOLINA | GASOLEO | GLP) #REQUIRED>
+    <!ELEMENT Caracteristicas (Cor, Quilometragem, Fotografia, Obs)>
+    <!ELEMENT Quilometragem (#PCDATA)>
+    <!ELEMENT Cor (#PCDATA)>
+    <!ATTLIST Cor nome CDATA #REQUIRED>
+    <!ELEMENT Fotografia (#PCDATA)>
+    <!ELEMENT Obs (#PCDATA)>
+    <!ELEMENT Preco (#PCDATA)>
+]>
+
+<ListaAutomoveis>
+
+    <Automovel>
+
+        <Descricao Combustivel="GASOLINA"> GASOLINA </Descricao>
+
+        <Caracteristicas>
+
+            <Cor nome="Azul"> Azul   </Cor>
+
+            <Quilometragem>   1 km  </Quilometragem>
+
+            <Fotografia> Duas fotos  </Fotografia>
+
+            <Obs> Nenhuma Observação </Obs>
+
+        </Caracteristicas>
+
+        <Preco> 15.000 Reais </Preco>
+
+    </Automovel>
+    <Automovel>
+
+        <Descricao Combustivel="GASOLEO"> GASOLEO </Descricao>
+
+        <Caracteristicas>
+
+            <Cor nome="Branco">  Branco  </Cor>
+
+            <Quilometragem>   2 km  </Quilometragem>
+
+            <Fotografia> Duas fotos  </Fotografia>
+
+            <Obs> Nenhuma Observação </Obs>
+
+        </Caracteristicas>
+
+        <Preco> 20.000 Reais </Preco>
+
+    </Automovel>
+
+</ListaAutomoveis>
